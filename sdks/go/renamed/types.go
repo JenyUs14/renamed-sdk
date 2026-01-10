@@ -12,7 +12,7 @@ type RenameResult struct {
 	FolderPath string `json:"folderPath,omitempty"`
 
 	// Confidence is the confidence score (0-1) of the suggestion.
-	Confidence float64 `json:"confidence"`
+	Confidence float64 `json:"confidence,omitempty"`
 }
 
 // RenameOptions are options for the rename operation.

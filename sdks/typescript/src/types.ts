@@ -50,7 +50,7 @@ export interface RenameResult {
   /**
    * Confidence score (0-1) of the suggestion
    */
-  confidence: number;
+  confidence?: number;
 }
 
 /**

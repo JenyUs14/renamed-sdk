@@ -44,5 +44,7 @@ func main() {
 	if result.FolderPath != "" {
 		fmt.Printf("  Folder:    %s\n", result.FolderPath)
 	}
-	fmt.Printf("  Confidence: %.1f%%\n", result.Confidence*100)
+	if result.Confidence > 0 {
+		fmt.Printf("  Confidence: %.1f%%\n", result.Confidence*100)
+	}
 }

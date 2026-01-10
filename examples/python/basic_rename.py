@@ -34,7 +34,8 @@ def main() -> None:
     print(f"  Suggested: {result.suggested_filename}")
     if result.folder_path:
         print(f"  Folder:    {result.folder_path}")
-    print(f"  Confidence: {result.confidence * 100:.1f}%")
+    if result.confidence is not None:
+        print(f"  Confidence: {result.confidence * 100:.1f}%")
 
 
 if __name__ == "__main__":

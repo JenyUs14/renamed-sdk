@@ -32,7 +32,9 @@ async function main() {
   if (result.folderPath) {
     console.log(`  Folder:    ${result.folderPath}`);
   }
-  console.log(`  Confidence: ${(result.confidence * 100).toFixed(1)}%`);
+  if (result.confidence !== undefined) {
+    console.log(`  Confidence: ${(result.confidence * 100).toFixed(1)}%`);
+  }
 }
 
 main().catch(console.error);

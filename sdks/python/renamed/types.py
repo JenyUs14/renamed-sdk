@@ -2,11 +2,13 @@
 
 from typing import Literal
 
-from pydantic import BaseModel, Field
+from pydantic import BaseModel, ConfigDict, Field
 
 
 class RenameResult(BaseModel):
     """Result of a rename operation."""
+
+    model_config = ConfigDict(populate_by_name=True)
 
     original_filename: str = Field(alias="originalFilename")
     """Original filename that was uploaded."""
@@ -17,11 +19,8 @@ class RenameResult(BaseModel):
     folder_path: str | None = Field(default=None, alias="folderPath")
     """Suggested folder path for organization."""
 
-    confidence: float
+    confidence: float | None = None
     """Confidence score (0-1) of the suggestion."""
-
-    class Config:
-        populate_by_name = True
 
 
 class RenameOptions(BaseModel):
@@ -34,14 +33,13 @@ class RenameOptions(BaseModel):
 class PdfSplitOptions(BaseModel):
     """Options for PDF split operation."""
 
+    model_config = ConfigDict(populate_by_name=True)
+
     mode: Literal["auto", "pages", "blank"] | None = None
     """Split mode: 'auto' (AI-detected), 'pages' (every N pages), 'blank' (at blank pages)."""
 
     pages_per_split: int | None = Field(default=None, alias="pagesPerSplit")
     """Number of pages per split (for 'pages' mode)."""
-
-    class Config:
-        populate_by_name = True
 
 
 JobStatus = Literal["pending", "processing", "completed", "failed"]
@@ -50,6 +48,8 @@ JobStatus = Literal["pending", "processing", "completed", "failed"]
 
 class SplitDocument(BaseModel):
     """A single document from PDF split."""
+
+    model_config = ConfigDict(populate_by_name=True)
 
     index: int
     """Document index (0-based)."""
@@ -66,12 +66,11 @@ class SplitDocument(BaseModel):
     size: int
     """Size in bytes."""
 
-    class Config:
-        populate_by_name = True
-
 
 class PdfSplitResult(BaseModel):
     """Result of PDF split operation."""
+
+    model_config = ConfigDict(populate_by_name=True)
 
     original_filename: str = Field(alias="originalFilename")
     """Original filename."""
@@ -82,12 +81,11 @@ class PdfSplitResult(BaseModel):
     total_pages: int = Field(alias="totalPages")
     """Total number of pages in original document."""
 
-    class Config:
-        populate_by_name = True
-
 
 class JobStatusResponse(BaseModel):
     """Response from job status endpoint."""
+
+    model_config = ConfigDict(populate_by_name=True)
 
     job_id: str = Field(alias="jobId")
     """Unique job identifier."""
@@ -104,21 +102,17 @@ class JobStatusResponse(BaseModel):
     result: PdfSplitResult | None = None
     """Result data when job is completed."""
 
-    class Config:
-        populate_by_name = True
-
 
 class ExtractOptions(BaseModel):
     """Extract operation options."""
+
+    model_config = ConfigDict(populate_by_name=True)
 
     schema_: dict | None = Field(default=None, alias="schema")
     """Schema defining what to extract."""
 
     prompt: str | None = None
     """Prompt describing what to extract."""
-
-    class Config:
-        populate_by_name = True
 
 
 class ExtractResult(BaseModel):

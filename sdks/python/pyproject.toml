@@ -43,6 +43,8 @@ dev = [
 Homepage = "https://www.renamed.to"
 Documentation = "https://www.renamed.to/docs/api-docs"
 Repository = "https://github.com/renamed-to/renamed-sdk"
+Issues = "https://github.com/renamed-to/renamed-sdk/issues"
+Changelog = "https://github.com/renamed-to/renamed-sdk/releases"
 
 [tool.hatch.build.targets.wheel]
 packages = ["renamed"]
