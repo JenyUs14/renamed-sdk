@@ -1,6 +1,10 @@
 <p align="center">
   <a href="https://www.renamed.to">
-    <img src="https://www.renamed.to/logo.svg" alt="renamed.to" width="120" />
+    <picture>
+      <source media="(prefers-color-scheme: dark)" srcset=".github/logo-dark.svg">
+      <source media="(prefers-color-scheme: light)" srcset=".github/logo.svg">
+      <img src=".github/logo.svg" alt="renamed.to" width="120">
+    </picture>
   </a>
 </p>
 
