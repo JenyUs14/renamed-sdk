@@ -125,12 +125,18 @@ jobs:
       - name: Pack
         run: dotnet pack --configuration Release --no-build --output ./nupkg
 
+      - name: Login to NuGet via Trusted Publishing
+        uses: nuget/login@v1
+
       - name: Publish to NuGet
-        run: dotnet nuget push ./nupkg/*.nupkg --api-key ${{ secrets.NUGET_API_KEY }} --source https://api.nuget.org/v3/index.json --skip-duplicate
+        run: dotnet nuget push ./nupkg/*.nupkg --source https://api.nuget.org/v3/index.json --skip-duplicate
 
   ruby:
     name: Publish Ruby
     runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      id-token: write
     defaults:
       run:
         working-directory: sdks/ruby
@@ -146,9 +152,9 @@ jobs:
         run: gem build *.gemspec
 
       - name: Publish to RubyGems
-        env:
-          GEM_HOST_API_KEY: ${{ secrets.RUBYGEMS_API_KEY }}
-        run: gem push *.gem
+        uses: rubygems/release-gem@v1
+        with:
+          working-directory: sdks/ruby
 
   rust:
     name: Publish Rust
