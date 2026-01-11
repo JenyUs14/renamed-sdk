@@ -182,18 +182,13 @@ jobs:
 
   swift:
     name: Tag Swift Package
-    runs-on: ubuntu-latest
+    runs-on: macos-latest
     steps:
       - uses: actions/checkout@v4
 
       # Swift packages are distributed via git tags
       # Swift Package Index automatically indexes public repositories
       # Users can add the package with the repository URL
-      - uses: swift-actions/setup-swift@v3
-        with:
-          swift-version: '5.10'
-          skip-verify-signature: true
-
       - name: Verify Swift package
         working-directory: sdks/swift
         run: |
