@@ -62,19 +62,19 @@ jobs:
           skip-existing: true
 
   go:
-    name: Tag Go Module
+    name: Publish Go Module
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
     steps:
       - uses: actions/checkout@v5
 
-      # Go modules are published via git tags
-      # The tag push that triggers this workflow is sufficient
-      # Users can fetch with: go get github.com/org/renamed-sdk/sdks/go@v1.x.x
       - name: Verify Go module
         working-directory: sdks/go
-        run: |
-          go mod verify
-          echo "Go module tagged and available at: github.com/${{ github.repository }}/sdks/go"
+        run: go mod verify
+
+      - name: Create Go module tag
+        run: bash scripts/go-tag.sh
 
   java:
     name: Publish Java
