@@ -11,9 +11,9 @@
 </p>
 
 <p align="center">
-  <a href="https://www.npmjs.com/package/@renamed/sdk"><img src="https://img.shields.io/npm/v/@renamed/sdk?style=flat-square&label=TypeScript&color=3178c6" alt="TypeScript" /></a>
+  <a href="https://www.npmjs.com/package/@renamed-to/sdk"><img src="https://img.shields.io/npm/v/@renamed-to/sdk?style=flat-square&label=TypeScript&color=3178c6" alt="TypeScript" /></a>
   <a href="https://pypi.org/project/renamed/"><img src="https://img.shields.io/pypi/v/renamed?style=flat-square&label=Python&color=3776ab" alt="Python" /></a>
-  <a href="https://pkg.go.dev/github.com/renamed-to/renamed-sdk/sdks/go"><img src="https://img.shields.io/github/v/tag/renamed-to/renamed-sdk?filter=go/*&style=flat-square&label=Go&color=00add8" alt="Go" /></a>
+  <a href="https://pkg.go.dev/github.com/renamed-to/renamed-sdk/sdks/go"><img src="https://img.shields.io/github/v/tag/renamed-to/renamed-sdk?style=flat-square&label=Go&color=00add8" alt="Go" /></a>
   <a href="https://central.sonatype.com/artifact/to.renamed/renamed-sdk"><img src="https://img.shields.io/maven-central/v/to.renamed/renamed-sdk?style=flat-square&label=Java&color=ed8b00" alt="Java" /></a>
   <a href="https://www.nuget.org/packages/Renamed.Sdk"><img src="https://img.shields.io/nuget/v/Renamed.Sdk?style=flat-square&label=C%23&color=512bd4" alt="C#" /></a>
 </p>
@@ -21,8 +21,8 @@
 <p align="center">
   <a href="https://rubygems.org/gems/renamed"><img src="https://img.shields.io/gem/v/renamed?style=flat-square&label=Ruby&color=cc342d" alt="Ruby" /></a>
   <a href="https://crates.io/crates/renamed"><img src="https://img.shields.io/crates/v/renamed?style=flat-square&label=Rust&color=dea584" alt="Rust" /></a>
-  <a href="https://github.com/renamed-to/renamed-sdk"><img src="https://img.shields.io/github/v/tag/renamed-to/renamed-sdk?filter=swift/*&style=flat-square&label=Swift&color=f05138" alt="Swift" /></a>
-  <a href="https://packagist.org/packages/renamed/sdk"><img src="https://img.shields.io/packagist/v/renamed/sdk?style=flat-square&label=PHP&color=777bb4" alt="PHP" /></a>
+  <a href="https://github.com/renamed-to/renamed-sdk"><img src="https://img.shields.io/github/v/tag/renamed-to/renamed-sdk?style=flat-square&label=Swift&color=f05138" alt="Swift" /></a>
+  <a href="https://packagist.org/packages/renamed-to/renamed-php"><img src="https://img.shields.io/packagist/v/renamed-to/renamed-php?style=flat-square&label=PHP&color=777bb4" alt="PHP" /></a>
 </p>
 
 <p align="center">
